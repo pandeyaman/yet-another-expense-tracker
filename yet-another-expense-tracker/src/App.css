@@ -1,0 +1,90 @@
+:root{
+  --primary:#3f3f74;
+  --secondary:#5d5d9b;
+  --background: #F1F0FF;
+  --white: #ffffff;
+  
+}
+
+html{
+  font-family: 'Heebo', sans-serif;
+  background-color: var(--background);
+  font-size: 16px;
+}
+
+.App{
+  background-color: var(--white);
+  width: 60%;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header{
+  color: var(--primary);
+}
+
+.h2-header{
+  color: var(--secondary);
+  margin-bottom: 5px;
+}
+
+.current-bal{
+    font-size: 2rem;
+}
+
+/* Income Expense Container */
+
+.income-expense-container{
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.child-container{
+  text-align: center;
+  /* border: 2px solid red */
+}
+
+.hr{
+  border: 1px solid rgba(97, 97, 97, 0.555);
+}
+
+.p-header{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: .2rem ;
+}
+
+.span-amount{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.amt-income{
+  color: rgb(194, 0, 0);
+}
+
+.amt-expense{
+  color: green;
+}
+
+.form-element{
+  margin-top: 10px;
+  width: 60%;
+}
+
+.form-element input{
+  width: 80%;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  padding: .3rem;
+  font-size: 1rem;
+}
+
+.form-label{
+  font-size: 1rem;
+  color: var(--secondary);
+  font-weight: 500;
+}
