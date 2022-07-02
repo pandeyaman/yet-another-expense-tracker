@@ -6,10 +6,15 @@
   
 }
 
+*{
+  /* border: 1px solid red; */
+}
+
 html{
   font-family: 'Heebo', sans-serif;
   background-color: var(--background);
   font-size: 16px;
+  
 }
 
 .App{
@@ -70,21 +75,81 @@ html{
   color: green;
 }
 
+.form-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form-inputs{
+width: 50%;
+}
+
+.form-submit{
+  width: 50%;
+  text-align: center;
+}
+
 .form-element{
   margin-top: 10px;
-  width: 60%;
 }
 
 .form-element input{
-  width: 80%;
   border: 2px solid var(--primary);
   border-radius: 10px;
   padding: .3rem;
   font-size: 1rem;
+  width: 90%;
 }
 
 .form-label{
   font-size: 1rem;
   color: var(--secondary);
   font-weight: 500;
+}
+
+.btn-submit{
+  padding: .7rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin-top: 2rem ;
+  border: 2px solid var(--primary);
+  background-color: white;
+  color: var(--primary);
+}
+
+.btn-submit:hover{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 4px 2px 0px, rgba(60, 64, 67, 0.15) 0px 3px 5px 1px;
+  cursor: pointer;
+  transition: .2s;
+  color: var(--white);
+  background-color: var(--secondary);
+}
+
+.ul-expenseList{
+  padding: 0;
+}
+
+.span-color-code{
+
+}
+
+.li-expenses{
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 5px;
+  list-style-type: none;
+  color: black;
+  display: flex ;
+  justify-content: space-between;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 6px 0px;
+}
+
+.li-desc{
+  margin-left: 1rem;
+}
+
+.li-amt{
+  margin-right: 1rem;
 }

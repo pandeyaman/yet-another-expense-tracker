@@ -1,9 +1,21 @@
-function ExpenseList(){
-    return(
+function ExpenseList(props) {
+
+    const list = props.expenseList.map((item)=>{
+        return (<div className='li-expenses'>
+                 <li className='li-desc'>{item.desc}</li>
+                 <li className='li-amt'>{item.amount}<span className='span-color-code'></span></li>
+            </div>
+        )
+    })
+
+
+    return (
         <div>
             <h2 className='h2-header'>Transactions</h2>
             <hr/>
-            <li>Expense 1</li>
+            <ul className='ul-expenseList'>
+                {list}
+            </ul>
         </div>
     )
 }
